@@ -67,8 +67,8 @@ $(document).ready(function () {
                 var result = eval(valActual);
                 //Verificar si el resultado de la oprecion es valido
                 if (result != undefined || result != null) {
-                    //Redondear valor a 4 decimales
-                    result = parseFloat(result).toFixed(4);
+                    //Redondear valor a 2 decimales
+                    result = parseFloat(result).toFixed(2);
                     //Guardar en historial el resultado de la opreacion
                     $("#Respuesta").val($("#Respuesta").val() + valActual + " = " + result + "\n").scrollBottom();
                     //Limpiar campo de entrada
@@ -92,8 +92,8 @@ $(document).ready(function () {
                 success: function (response) {
                     //Verificar si la respuesta no es un error
                     if (response != false) {
-                        //Redondear valor a 4 decimales
-                        response = parseFloat(response).toFixed(4);
+                        //Redondear valor a 2 decimales
+                        response = parseFloat(response).toFixed(2);
                         $("#Respuesta").val($("#Respuesta").val() + valActual + " = " + response + "\n").scrollBottom();
                         //Limpiar campo de entrada
                         $("#Num").val('');

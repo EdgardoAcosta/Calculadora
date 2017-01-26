@@ -20,7 +20,7 @@
     </div>
     <div class="row">
         <div class="col-xs-5">
-            <input id="Num"  value="">
+            <input id="Num"  value="" autofocus>
         </div>
     </div>
     <div class="row">
